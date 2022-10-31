@@ -20,10 +20,7 @@ function Navigation() {
             path:'/featured',
             name:'Featured'
         },
-        {
-            path:'/blog',
-            name:'Blog'
-        },
+        
         {
             path:'/contact-us',
             name:'Contact Us'
@@ -32,9 +29,9 @@ function Navigation() {
 
     ]
   return (
-    <Navbar className=' container navbar' bg="light" expand="lg">
+    <Navbar className=' container navbar' expand="lg">
       <Container fluid className='navcontainer'>
-        <Navbar.Brand className='brand'href="#">COMPANY NAME</Navbar.Brand>
+        <Navbar.Brand className='brand'href="#">|COMPANY NAME|</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -44,14 +41,14 @@ function Navigation() {
           >
             {
                 menuItems.map((item)=>(
-                    <NavLink to {...item.path} key={item.name}>
+                    <NavLink to {...item.path} key={item.name} >
                         <div className='navitems'>{item.name}</div>
                     </NavLink>
                 ))
             }
           </Nav>
           <Nav className='ms-auto'>
-            <Button className='btn btn-success'>Contact Us</Button>
+            <Button className='btn btn-16'>Contact Us</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

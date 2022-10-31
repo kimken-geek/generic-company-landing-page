@@ -1,12 +1,14 @@
 import React from 'react';
+import { useRef } from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import ContactImg from '../contact-us.png';
 
 function Contact() {
+    
   return (
     <>
-    <div className="container mt-5 containercontact">
+    <div className="container mt-5 containercontact min-vh-100">
         <div className="contact-img ms-5 img-fluid">
             <img src= {ContactImg} className='headerimg' alt='headerimg'/>
         </div>
