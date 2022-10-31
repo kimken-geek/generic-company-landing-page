@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;400&display=swap');
-
+html {
+  scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -47,12 +49,11 @@ body{
     border-radius: 20px;
 }
 .btn {
-    width: 130px;
+    width: 200px;
     height: 40px;
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -156,7 +157,7 @@ body{
     display: flex;
 }
 .featured{
-    margin: 0.25%;
+    margin: 1px;
 }
 
 .left {
@@ -174,9 +175,13 @@ body{
     align-items: center;
     justify-content: center;
     padding: 30px;
-    border-radius: 10px;
     color: white;
     margin-left: -150px;
+    border-radius: 35px;
+    background: linear-gradient(145deg, #2421cd, #2b28f4);
+    box-shadow:  5px 5px 10px #141270,
+             -5px -5px 10px #3c38ff;
+    
   }
   .right h1 {
     font-size: 40px;

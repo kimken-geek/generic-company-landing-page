@@ -12,7 +12,7 @@ function Featured(props) {
             {props.content}
           </Card.Text>
         </Card.Body>
-        <a href='#'className='btn btn-5'>Read More</a>
+        <a href='#'className=' btn btn-5 text-center'>Read More</a>
       </Card>
     </section>
     

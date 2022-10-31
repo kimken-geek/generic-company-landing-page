@@ -2,7 +2,7 @@ import React from 'react'
 
 function About2() {
   return (
-    <div className='container mx-auto min-vh-100'>
+    <div className='container mx-auto min-vh-100' id="aboutus">
         <h1 className="container d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom">  About Us</h1>
         <div className="container w-100 m-3 d-flex align-items-center">
             <div className="left"></div>

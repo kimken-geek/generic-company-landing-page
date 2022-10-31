@@ -4,49 +4,36 @@ import Container from 'react-bootstrap/Container';
 import NavLink from 'react-bootstrap/esm/NavLink';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link, animateScroll as scroll } from "react-scroll";
 import '../App.css'
+import logo from '../Clogo.png'
 
 function Navigation() {
-    const menuItems = [
-        {
-            path:'/',
-            name:'Home'
-        },
-        {
-            path:'/about-us',
-            name:'About Us'
-        },
-        {
-            path:'/featured',
-            name:'Featured'
-        },
-        
-        {
-            path:'/contact-us',
-            name:'Contact Us'
-        },
-        
-
-    ]
+  
   return (
     <Navbar className=' container navbar' expand="lg">
       <Container fluid className='navcontainer'>
-        <Navbar.Brand className='brand'href="#">|COMPANY NAME|</Navbar.Brand>
+        <Navbar.Brand className='brand'href="#">
+        <img
+              src={logo}
+              width="100px"
+              height="100px"
+              className="d-inline-block align-top"
+              alt="company logo"
+        />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
+            <Nav
             className="ms-auto"
             style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            {
-                menuItems.map((item)=>(
-                    <NavLink to {...item.path} key={item.name} >
-                        <div className='navitems'>{item.name}</div>
-                    </NavLink>
-                ))
-            }
-          </Nav>
+            navbarScroll>
+                <Nav.Link className='navitems' activeClass='active' spy={true} smooth={true} offset={-70} duration={500} href='#'>Home</Nav.Link>
+                <Nav.Link className='navitems'  activeClass='active' spy={true} smooth={true} offset={-70} duration={500} href='#aboutus'>About Us</Nav.Link>
+                <Nav.Link className='navitems'  activeClass='active' spy={true} smooth={true} offset={-70} duration={500} href='#Featured'>Featured</Nav.Link>
+                <Nav.Link className='navitems'  activeClass='active' spy={true} smooth={true} offset={-70} duration={500} href='#contactus'>Contact Us</Nav.Link>
+            </Nav>
+
           <Nav className='ms-auto'>
             <Button className='btn btn-16'>Contact Us</Button>
           </Nav>

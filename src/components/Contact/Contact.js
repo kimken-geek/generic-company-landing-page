@@ -8,7 +8,7 @@ function Contact() {
     
   return (
     <>
-    <div className="container mt-5 containercontact min-vh-100">
+    <div className="container mt-5 containercontact min-vh-100" id='contactus'>
         <div className="contact-img ms-5 img-fluid">
             <img src= {ContactImg} className='headerimg' alt='headerimg'/>
         </div>
