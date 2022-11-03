@@ -10,7 +10,7 @@ function Contact() {
     <>
     <div className="container mt-5 containercontact min-vh-100" id='contactus'>
         <div className="contact-img ms-5 img-fluid">
-            <img src= {ContactImg} className='headerimg' alt='headerimg'/>
+            <img src= {ContactImg} className='img-fluid' alt='contact image'/>
         </div>
         <Form className='ms-3' id='formcontainer'>
             <h2 className='text-center'>Contact Us</h2>
